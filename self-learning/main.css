@@ -1,0 +1,21 @@
+body{
+    font-family: monospace;
+}
+ul{
+    li {
+        list-style: circle;
+    }
+    .list {
+        list-style: square;
+    }
+      
+    #msg {
+        font-family: monospace;
+    }
+}
+.A123{
+    color: blue;
+}
+#B123{
+    color:green;
+}
