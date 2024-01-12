@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>9-26</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            padding-top: 20px;
+            height: 50px;
+        }
+
+        body {
+            border: 2px black solid;
+            width: 800px;
+            font-size: 10pt;
+            margin: 0 auto;
+        }
+
+        article {
+            background-color: honeydew;
+            padding: 10px;
+            border: 2px black solid;
+            height: 480px;
+        }
+
+        #menu {
+            border: 1px black solid;
+            height: 110px;
+            background-color: paleturquoise;
+            text-align: center;
+        }
+
+        #menu ul {
+            padding: 0;
+            display: table;
+            border-spacing: 5px;
+            width: 100%;
+        }
+
+        #menu li {
+            display: table-cell;
+            font-size: 14pt;
+        }
+
+        #menu li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu li a:hover {
+            color: white;
+            background-color: #DDDDDD;
+        }
+
+        aside {
+            position: relative;
+            height: 480px;
+            border: 2px black solid;
+            padding: 10px;
+            float: right;
+            width: 25%;
+        }
+
+        .ul1 {
+            padding: 20px;
+        }
+
+        footer {
+            border: 1px black solid;
+            background-color: lightgoldenrodyellow;
+            color: blue;
+            font-size: 24pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <header>
+            <h1>INSTRUCTION INFORMATION SYSTEM</h1>
+        </header>
+        <ul>
+            <li><a href="">Curriculum Vitae</a></li>
+            <li><a href="">Publication</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">System Demo</a></li>
+        </ul>
+    </div>
+    <aside>
+        <h2>相關資源網站</h2>
+        <ul>
+            <li><a href="">Wikipedia</a></li>
+            <li><a href="">Keras</a></li>
+            <li><a href="">PyTorch</a></li>
+            <a href="">更多資源</a>
+        </ul>
+    </aside>
+    <article>
+        <h2>歡迎光臨史瑞克之深度學習</h2><br>
+        <p>深度學習（英語：deep learning）是機器學習的分支，是一種以人工神經網路為架構，對資料進行表徵學習的演算法。</p>
+        <hr>
+        <h3>深度學習種類</h3>
+        <ul class="ul1">基本
+            <li>Convolution Neural Networks: CNN</li>
+            <li>Recurrent Neural Network: RNN</li>
+            <li>Yolo</li>
+            <li>UNet</li>
+            <li>Generative Adversarial Nets: GAN</li>
+            <li>Graph Neural Network: GNN</li>
+        </ul>
+        <ul class="ul1">進階
+            <li>LSTM (Long Short-Term Memory)</li>
+            <li>Auto encoder,Attention mechanism,Transformer</li>
+            <li>Transfer learning</li>
+            <li>Meta learning</li>
+            <li>Few-Shot Learning</li>
+            <li>Federated learning</li>
+            <li>Metric Learning</li>
+        </ul>
+        <br>
+        <p>我的課程</p>
+        <hr>
+    </article>
+
+    <footer>
+        這是一個CSS版面參考範例
+    </footer>
+</body>
+
+</html>

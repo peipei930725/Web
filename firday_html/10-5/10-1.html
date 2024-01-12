@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javescript</title>
+
+    <script src="9-50.js"></script>
+    <link rel="stylesheet" href="9-50.css">
+</head>
+
+<body>
+    <h1>網頁程式設計</h1>
+    <hr>
+    <img hidden src="001.png" width="230" height="150" id="img1">
+
+    <hr>
+    <table border="1">
+        <tr>
+            <th rowspan="2" bgcolor="pink">學生/姓名</th>
+            <th colspan="4">基本資料</th>
+            <th colspan="4">成績</th>
+        </tr>
+        <tr>
+            <th>生日:</th>
+            <th>興趣:</th>
+            <th>科系:</th>
+            <th>專長:</th>
+            <th>計概:</th>
+            <th>程式設計:</th>
+            <th>企業概論:</th>
+            <th>網路概論:</th>
+        </tr>
+        <tr>
+            <td>劉沛辰</td>
+            <td>2004/07/25</td>
+            <td>玩電腦</td>
+            <td>資工系</td>
+            <td>寫程式</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1000</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>蔡依林</td>
+            <th colspan="8">??</th>
+        </tr>
+    </table>
+    <hr>
+    <p>
+        <input type="button" value="開始" onclick=start()>
+    </p>
+    <a href="https://www.google.com.tw/?hl=zh_TW">這裡是google</a><br>
+    <a href="https://tw.yahoo.com/" target="_blank">不要點這個yahoo</a>
+
+    <p><input type="button" value="顯示個人照片" onclick=show(img1)>
+    <p><input type="button" value="隱藏個人照片" onclick=nonshow(img1)>
+
+    <p><input type="button" value=" 按我 " onclick=message()>
+    <p><input type="button" value=" 到google " onclick=winopen()>
+
+    <p>
+        <input type="button" onclick="document.bgColor='red'" value="紅色背景">
+        <input type="button" onclick="document.bgColor='yellow'" value="黃色背景">
+        <input type="button" onclick="document.bgColor='green'" value="綠色背景">
+        <input type="button" onclick="document.bgColor='white'" value="白色背景">
+    </p>
+
+    <p><button onclick=msg()>POPUP window01</button></p>
+
+    <dialog id="info">
+        <p>這是彈出視窗</p>
+        <button id="close">close</button>
+    </dialog>
+
+    <p>
+        <hr>
+    </p>
+
+    <p>
+        學號: <input type="text" name="sid" id="data">
+    </p>
+
+    <p>
+        性別:
+        <select name="sex" onchange="mySelect()">
+            <option selected>請選擇</option>
+            <option>男</option>
+            <option>女</option>
+        </select>
+    </p>
+
+    <p>
+        血型:
+        <select id="sel" name="bloodtype" style="display:none">
+            <option selected>A</option>
+            <option>B</option>
+            <option>O</option>
+            <option>AB</option>
+        </select>
+    </p>
+
+    <div onmousemove="hover()" onmouseout="hout()">
+        <h3>
+            <p id="demo">Try me! Onmouseover & Onmousehout!</p>
+        </h3>
+    </div>
+
+    <p><input type="button" value="送 出" onclick=check()></p>
+</body>
+
+</html>

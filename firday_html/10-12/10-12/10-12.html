@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>10-12</title>
+
+    <script src="10-12.js"></script>
+    <link rel="stylesheet" href="10-12.css">
+</head>
+
+<body onload="showtime()">
+
+    <p><input type="text" id="time1"></p>
+
+    <div class="outside">
+        <div class="pic">
+            <div class="serial">1/4</div>
+            <img class="img" src="photo\001.jpg">
+        </div>
+
+        <div class="pic">
+            <div class="serial">2/4</div>
+            <img class="img" src="photo\002.jpg">
+        </div>
+        <div class="pic">
+            <div class="serial">3/4</div>
+            <img class="img" src="photo\003.jpg">
+        </div>
+        <div class="pic">
+            <div class="serial">4/4</div>
+            <img class="img" src="photo\004.jpg">
+        </div>
+
+        <div class="prev" onclick="prev()">&lt</div>
+        <div class="next" onclick="next()">&gt</div>
+    </div>
+
+    <div style="text-align:center">
+        <div class="dot" onclick="show(0)"></div>
+        <div class="dot" onclick="show(1)"></div>
+        <div class="dot" onclick="show(2)"></div>
+        <div class="dot" onclick="show(3)"></div>
+    </div>
+</body>
+
+</html>

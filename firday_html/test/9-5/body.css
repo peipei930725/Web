@@ -1,0 +1,40 @@
+.odd {
+    background: linen;
+}
+
+.even {
+    background: lightblue;
+}
+
+.even:hover {
+    background: red;
+}
+
+#bt1 {
+    font-size: 20px;
+    color: red;
+}
+
+#bt2 {
+    font-size: 20px;
+    color: blue;
+}
+
+a:link {
+    text-decoration: underline;
+    color: blue;
+    font-family: 標楷體;
+}
+
+a:visited {
+    color: black;
+    font-family: 標楷體;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    font-family: 標楷體;
+    font-style: italic;
+    font-weight: 900;
+}

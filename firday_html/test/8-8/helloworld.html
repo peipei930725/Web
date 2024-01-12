@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javescript</title>
+    <script>
+        function show(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function nonshow(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+        function message() {
+            alert("Hi, \n 歡迎光臨 ")
+        }
+        function winopen() {
+            window.open("https://www.google.com.tw/?hl=zh_TW", "winopen", "width=300 height=200")
+        }
+    </script>
+</head>
+
+<body>
+    <h1>網頁程式設計</h1>
+    <hr>
+    <img hidden src="001.jpg" width="230" height="150" id="img1">
+
+    <hr>
+    <table border="1">
+        <tr>
+            <th rowspan="2" bgcolor="pink">學生/姓名</th>
+            <th colspan="4">基本資料</th>
+            <th colspan="4">成績</th>
+        </tr>
+        <tr>
+            <th>生日:</th>
+            <th>興趣:</th>
+            <th>科系:</th>
+            <th>專長:</th>
+            <th>計概:</th>
+            <th>程式設計:</th>
+            <th>企業概論:</th>
+            <th>網路概論:</th>
+        </tr>
+        <tr>
+            <td>劉沛辰</td>
+            <td>2004/07/25</td>
+            <td>玩電腦</td>
+            <td>資工系</td>
+            <td>寫程式</td>
+            <td>10</td>
+            <td>100</td>
+            <td>1000</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>蔡依林</td>
+            <th colspan="8">??</th>
+        </tr>
+    </table>
+    <hr>
+    <a href="https://www.google.com.tw/?hl=zh_TW">這裡是google</a><br>
+    <a href="https://tw.yahoo.com/" target="_blank">不要點這個yahoo</a>
+
+    <p><input type="button" value="顯示個人照片" onclick=show('img1')>
+    <p><input type="button" value="隱藏個人照片" onclick=nonshow('img1')>
+
+    <p><input type="button" value=" 按我 " onclick=message()>
+    <p><input type="button" value=" 到google " onclick=winopen()>
+
+</body>
+
+</html>

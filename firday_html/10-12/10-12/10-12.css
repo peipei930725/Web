@@ -1,0 +1,53 @@
+.outside {
+    position: relative;
+    width: 400px;
+    margin: 10px auto;
+    border: 10px solid blue;
+}
+
+.img {
+    width: 400px;
+}
+
+.serial {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: lightblue;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: yellow;
+    font-size: 20pt;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: yellow;
+    font-size: 20pt;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: blue;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: solid black 1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: lightgray;
+}
